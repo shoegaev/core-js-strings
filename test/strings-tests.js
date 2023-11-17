@@ -36,6 +36,7 @@ describe('strings-tasks', () => {
     assert.equal(tasks.isString(false), false);
     assert.equal(tasks.isString(42), false);
     assert.equal(tasks.isString(3.14), false);
+    
   });
 
   it.optional('concatenateStrings should return concatenation of two strings', () => {
@@ -320,7 +321,7 @@ describe('strings-tasks optimal implementation', () => {
 
     if (!fnStr.includes('return')) {
       this.skip();
-    }   
+    }
 
     assert.equal(
       fnStr.includes('concat'),

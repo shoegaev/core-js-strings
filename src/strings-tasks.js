@@ -293,7 +293,7 @@ function reverseString(str) {
 function orderAlphabetically(str) {
   return str
     .split('')
-    .sort(function (a, b) {
+    .sort(function sort(a, b) {
       if (a > b) {
         return 1;
       }
